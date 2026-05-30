@@ -21,6 +21,8 @@ GOOGLE_API_KEY = "Your Google API Key"
 
 Open New Terminal   
 
+Note : best.pt file not upload           
+
 cd backend 
 python app.py
 
