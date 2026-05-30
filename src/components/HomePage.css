@@ -1,0 +1,41 @@
+.home-container {
+  background-size: cover;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-container {
+  margin: 0 auto 10px;
+}
+
+.logo-container svg {
+  width: 300px;
+  height: 200px;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .your-container {
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  svg {
+    width: 90% !important;
+    height: auto !important;
+  }
+}

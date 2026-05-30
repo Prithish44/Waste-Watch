@@ -1,0 +1,6 @@
+__pycache__/
+images/
+runs/
+server/
+.env
+best.pt
