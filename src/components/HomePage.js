@@ -7,6 +7,8 @@ import background from "../assets/bg.png";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import MapSearch from "./MapSearch";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const HomePage = () => {
   const navigate = useNavigate();
 
@@ -25,7 +27,7 @@ const HomePage = () => {
     formData.append("longitude", location.lon);
     formData.append("address", address);
     try {
-      const response = await fetch("http://localhost:5001/predict", {
+      const response = await fetch("API_URL/predict", {
         method: "POST",
         body: formData,
       });
