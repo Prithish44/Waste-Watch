@@ -32,6 +32,14 @@ if not os.path.exists(DATA_FILE):
 
 model = YOLO("best.pt")
 
+
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "status": "success",
+        "message": "Waste Watch Backend is running!"
+    })
+
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'image' not in request.files:
